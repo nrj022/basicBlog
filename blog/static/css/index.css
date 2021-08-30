@@ -1,0 +1,30 @@
+@import "reset.css";
+@import "main_board.css";
+@import "post_detail.css";
+@import "new_post.css";
+@import "remove_post.css";
+
+.btn {
+  background-color: white;
+  border: 1px solid grey;
+  box-shadow: 0 0 5px lightgrey;
+  padding: 4px 5px;
+  font-size: 12px;
+}
+
+.btn:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 100px 0 50px;
+  font-weight: 700;
+  font-size: 20px;
+}

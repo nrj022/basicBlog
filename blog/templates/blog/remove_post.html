@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %} {% block content%}
+<form class="delete-checkform" method="POST">
+  {% csrf_token %}
+  <span class="delete-checkmessage"
+    >Are you sure that you delete the '{{ post.title }}' post?</span
+  >
+  <button class="btn delete-yes">Yes</button>
+</form>
+{% endblock %}

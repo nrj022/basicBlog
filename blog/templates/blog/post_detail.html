@@ -1,0 +1,16 @@
+{% extends 'blog/base.html'%} {% block content %}
+<div class="container">
+  <header class="post-detail__header">
+    <h2 class="post-detail__title">{{ post.title }}</h2>
+    <div class="post-detail__info">
+      <span class="post-detail__info--author">{{ post.author }}</span>
+      <span class="post-detail__info--date">{{ post.created_date }}</span>
+    </div>
+  </header>
+  <div class="post-detail__text">{{ post.text|linebreaksbr }}</div>
+</div>
+<div class="btn-more">
+  <a class="btn update" href="{% url 'update_post' pk=post.pk %}">edit</a>
+  <a class="btn delete" href="{% url 'remove' pk=post.pk %}">delete</a>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'blog/base.html' %} {% block content %}
+<div class="new-post_subtitle">
+  <h2>Update the Post</h2>
+</div>
+<form method="POST">
+  {% csrf_token %}
+  <table>
+    {% comment %}
+    <tr class="category-choose">
+      <td>category</td>
+      <td>
+        <select name="category" default="coding">
+          <option value="">choose a category</option>
+          <option value="coding">coding</option>
+          <option value="sport">sport</option>
+          <option value="living">living</option>
+        </select>
+      </td>
+    </tr>
+    {% endcomment %}
+    <tr class="new-post__title">
+      <td>title</td>
+      <td>
+        <input type="text" name="title" value="{{ post.title }}" />
+      </td>
+    </tr>
+    <tr class="new-post__content">
+      <td>content</td>
+      <td>
+        <textarea name="body">{{ post.text }}</textarea>
+      </td>
+    </tr>
+  </table>
+  <center class="new-post__btn"><button type="submit">save</button></center>
+</form>
+{% endblock %}

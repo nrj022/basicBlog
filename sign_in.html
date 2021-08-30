@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      .signin-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .signin-form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .signin-form div span {
+        margin-bottom: 5px;
+      }
+    </style>
+    <title>BASIC COMMUNITY / SIGN IN</title>
+  </head>
+  <body>
+    <a class="home-btn" href="main_board.html">home</a>
+    <h1 class="signin-title">USER INFO</h1>
+    <form class="signin-form">
+      <div>
+        <span>Email</span>
+        <input class="info-input" type="text" />
+        <span>Password</span>
+        <input class="info-input" type="password" />
+        <span>Check Your Password</span>
+        <input class="info-input" type="password" />
+        <span>Username</span>
+        <input class="info-input" type="text" />
+        <span>Date Of Birth</span>
+        <input class="info-input" type="date" />
+      </div>
+      <button class="submit-btn" type="submit">SIGN IN</button>
+    </form>
+  </body>
+</html>
